@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_unique_card_areas",
+  "info": {
+    "displayName": "CardAreas",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Background": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

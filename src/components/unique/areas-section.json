@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_unique_areas_sections",
+  "info": {
+    "displayName": "AreasSection",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "Leftcard": {
+      "displayName": "CardAreas",
+      "type": "component",
+      "repeatable": false,
+      "component": "unique.card-areas",
+      "required": true
+    },
+    "MiddleCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "unique.card-areas",
+      "required": true
+    },
+    "RightCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "unique.card-areas",
+      "required": true
+    }
+  }
+}
