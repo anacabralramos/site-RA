@@ -38,7 +38,7 @@ class Home {
     if (this.OpenedSection) {
       const { Span, Background } = this.OpenedSection;
       return {
-        Span,
+        Title: Span,
         Background: Background.url,
       };
     }
@@ -46,7 +46,7 @@ class Home {
   }
   getSec2() {
     if (this.MiddleSection) {
-      const { Span } = this.OpenedSection;
+      const { Span } = this.MiddleSection;
       return {
         Span,
       };
