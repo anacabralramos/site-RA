@@ -13,15 +13,24 @@ class Home {
     }
   }
 
-  getAll() {
+  // getAll() {
+  //   return Object.freeze({
+  //     ...this.getHeader(),
+  //     ...this.getSec1(),
+  //     ...this.getSec2(),
+  //     ...this.getSecAreas(),
+  //     ...this.getFooter(),
+  //   });
+  // }
+  getHome() {
     return Object.freeze({
-      ...this.getHeader(),
       ...this.getSec1(),
       ...this.getSec2(),
       ...this.getSecAreas(),
       ...this.getFooter(),
     });
   }
+
   getHeader() {
     if (this.header) {
       const { menu, MenuAcordeon, Logo, TitleAcordeon } = this.header;
@@ -98,6 +107,15 @@ module.exports = createCoreController("api::home.home", ({ strapi }) => ({
       Header: home,
     };
   },
+  async getHeader(ctx) {
+    const { query } = ctx;
+    const entity = await strapi.entityService.findMany("api::home.home", {
+      ...query,
+    });
+
+    const objt = new Home(entity[0] || { Conteudo: [] });
+    return { Home: objt.getHeader() };
+  },
   async find(ctx) {
     const { query } = ctx;
     const entity = await strapi.entityService.findMany("api::home.home", {
@@ -105,6 +123,6 @@ module.exports = createCoreController("api::home.home", ({ strapi }) => ({
     });
 
     const objt = new Home(entity[0] || { Conteudo: [] });
-    return { Home: objt.getAll() };
+    return { Home: objt.getHome() };
   },
 }));
