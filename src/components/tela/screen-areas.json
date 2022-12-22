@@ -1,8 +1,9 @@
 {
   "collectionName": "components_tela_screen_areas",
   "info": {
-    "displayName": "ScreenAreas",
-    "icon": "align-left"
+    "displayName": "PanelAreas",
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
