@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_tela_screen_areas",
+  "collectionName": "components_simple_card_areas",
   "info": {
     "displayName": "CardAreas",
     "icon": "align-center",
@@ -15,17 +15,13 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "icon": {
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     }
   }
 }
