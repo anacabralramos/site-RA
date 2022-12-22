@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Menu": {
+      "type": "dynamiczone",
+      "components": [
+        "simple.text"
+      ]
+    },
+    "TitleAcordeon": {
+      "type": "string"
+    },
+    "Acordeon": {
+      "type": "dynamiczone",
+      "components": [
+        "simple.acordeon"
+      ],
+      "required": true
+    }
+  }
+}

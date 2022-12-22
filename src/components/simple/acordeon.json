@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_simple_acordeons",
+  "info": {
+    "displayName": "Acordeon",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TextOption": {
+      "type": "string"
+    }
+  }
+}

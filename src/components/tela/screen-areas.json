@@ -1,28 +1,27 @@
 {
-  "collectionName": "components_unique_areas_sections",
+  "collectionName": "components_tela_screen_areas",
   "info": {
-    "displayName": "AreasSection",
-    "icon": "adjust"
+    "displayName": "ScreenAreas",
+    "icon": "align-left"
   },
   "options": {},
   "attributes": {
-    "Leftcard": {
-      "displayName": "CardAreas",
+    "LeftCard": {
       "type": "component",
       "repeatable": false,
-      "component": "unique.card-areas",
+      "component": "simple.screen-areas",
       "required": true
     },
     "MiddleCard": {
       "type": "component",
       "repeatable": false,
-      "component": "unique.card-areas",
+      "component": "simple.screen-areas",
       "required": true
     },
     "RightCard": {
       "type": "component",
       "repeatable": false,
-      "component": "unique.card-areas",
+      "component": "simple.screen-areas",
       "required": true
     }
   }

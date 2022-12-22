@@ -12,33 +12,26 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "header": {
-      "type": "component",
-      "repeatable": false,
-      "component": "global.header"
-    },
-    "OpenedSection": {
-      "type": "component",
-      "repeatable": false,
-      "component": "unique.simple-section",
+    "Title": {
+      "type": "string",
       "required": true
     },
-    "MiddleSection": {
-      "type": "component",
-      "repeatable": false,
-      "component": "unique.simple-section",
+    "Background": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Subtitle": {
+      "type": "string",
       "required": true
     },
-    "AreasSection": {
+    "screenAreas": {
       "type": "component",
       "repeatable": false,
-      "component": "unique.areas-section",
-      "required": true
-    },
-    "footer": {
-      "type": "component",
-      "repeatable": false,
-      "component": "global.footer",
+      "component": "tela.screen-areas",
       "required": true
     }
   }
